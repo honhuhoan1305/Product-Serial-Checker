@@ -1,52 +1,36 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299.77">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Serial Verification</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Product Serial Verification&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="style.css" /&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="csw-wrapper"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="csw-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1&gt;PRODUCT SERIAL VERIFICATION SERVICE&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>On this page, you can quickly check the Serial Number or IMEI to verify whether your Solar E product is genuine. Every serial entered will be cross-referenced with our internal database to ensure 100% authenticity.</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="csw-check-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;VERIFY YOUR SOLAR E PRODUCT SERIAL&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>Enter the Serial Number or IMEI below to check. If you encounter any issues or need assistance, don’t hesitate to contact the Solar E team — we’re always ready to support you and provide post-sale service!</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;form class="csw-form" onsubmit="event.preventDefault(); checkSerial();"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;input type="text" id="csw-serialInput" placeholder="Enter Serial. e.g. P990123456" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button type="submit" class="csw-check-btn"&gt;VERIFY&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/form&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="csw-result" class="csw-result" style="display: none;"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="script.js"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+  <div class="csw-wrapper">
+    <div class="csw-header">
+      <h1>PRODUCT SERIAL VERIFICATION SERVICE</h1>
+      <p>
+        On this page, you can quickly check the Serial Number or IMEI to verify whether your Solar E product is genuine. Every serial entered will be cross-referenced with our internal database to ensure 100% authenticity.
+      </p>
+    </div>
+
+    <div class="csw-check-box">
+      <h2>VERIFY YOUR SOLAR E PRODUCT SERIAL</h2>
+      <p>
+        Enter the Serial Number or IMEI below to check. If you encounter any issues or need assistance, don’t hesitate to contact the Solar E team — we’re always ready to support you and provide post-sale service!
+      </p>
+
+      <form class="csw-form" onsubmit="event.preventDefault(); checkSerial();">
+        <input type="text" id="csw-serialInput" placeholder="Enter Serial. e.g. P990123456" />
+        <button type="submit" class="csw-check-btn">VERIFY</button>
+      </form>
+
+      <div id="csw-result" class="csw-result" style="display: none;"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
