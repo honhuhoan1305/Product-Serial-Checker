@@ -1,0 +1,128 @@
+/* style.css */
+.csw-wrapper * {
+  box-sizing: border-box;
+}
+
+.csw-wrapper {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.csw-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.csw-header h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.csw-header p {
+  font-size: 15px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.csw-check-box {
+  background: linear-gradient(135deg, #6487f3, #a269e6);
+  border-radius: 24px;
+  padding: 40px 30px;
+  color: white;
+  text-align: center;
+}
+
+.csw-check-box h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.csw-check-box p {
+  font-size: 15px;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #f0f0f0;
+}
+
+.csw-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.csw-form input {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  width: 320px;
+  outline: none;
+}
+
+.csw-form button {
+  background: white;
+  color: #6f42c1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.csw-form button:hover {
+  background: #f0f0f0;
+}
+
+.csw-result {
+  margin-top: 24px;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.csw-result.success {
+  background-color: #e7f9ed;
+  border: 1px solid #2e7d32;
+  color: #2e7d32;
+}
+
+.csw-result.error {
+  background-color: #fff3f3;
+  border: 1px solid #d32f2f;
+  color: #d32f2f;
+}
+
+.csw-result.loading {
+  background-color: #fffbea;
+  border: 1px solid #f9a825;
+  color: #f9a825;
+}
+
+.csw-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .csw-form {
+    flex-direction: column;
+  }
+
+  .csw-form input {
+    width: 100%;
+  }
+}
